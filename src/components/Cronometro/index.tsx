@@ -1,4 +1,4 @@
-import Botao from "../botao";
+import Botao from "../Botao";
 import Relogio from "./Relogio";
 import style from './Cronometro.module.scss';
 import { tempoParaSegundos } from "../../common/utils/time";
@@ -21,9 +21,9 @@ export default function Cronometro({ selecionado }: Props) {
       <div className={style.relogioWrapper}>
         <Relogio />
       </div>
-      <botao>
+      <Botao>
         Começar!
-      </botao>
+      </Botao>
     </div>
   )
 }
