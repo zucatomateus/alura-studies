@@ -6,9 +6,9 @@ class Botao extends React.Component <{
     onclick?: () => void;
 }> {
   render () {
-    const { type = "button", onClick } = this.props;
+    const { type = "button", onclick } = this.props;
     return (
-          <button onClick={onClick} type={type} className={style.botao}>
+          <button onClick={onclick} type={type} className={style.botao}>
               {this.props.children}
           </button>
       )

@@ -33,7 +33,7 @@ function regressiva(contador: number = 0) {
       <div className={style.relogioWrapper}>
         <Relogio tempo={tempo}/>
       </div>
-      <Botao onClick={() => regressiva(tempo)}>
+      <Botao onclick={() => regressiva(tempo)}>
         Começar!
       </Botao>
     </div>
